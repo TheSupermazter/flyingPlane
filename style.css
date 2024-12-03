@@ -1,0 +1,38 @@
+/* HEADER */
+
+header section nav:first-of-type {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 0.6em;
+	margin-top: 1em;
+	
+}
+
+header section img {
+	margin: 1.2em;
+	max-height: 3.6em;
+	width: 3.6em;
+
+}
+
+header > img {
+	margin-top: 3em;
+	margin-left: 0em;
+	height: 7em;
+
+	
+	animation:movingplane linear;
+	animation-timeline: view();
+}
+
+@keyframes movingplane {
+	0% {
+		translate: -200vw 0vw;
+		scale: 1%;
+	}
+	100% {
+		translate:100vw 0vw;
+		scale:200%;
+	}
+}
